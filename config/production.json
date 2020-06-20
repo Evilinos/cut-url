@@ -2,5 +2,5 @@
   "port": 80,
   "jwtSecret": "jwt secret string",
   "mongoUri": "mongodb+srv://guest:ASDFzxcv1234@cluster0-kb78e.mongodb.net/app?retryWrites=true&w=majority",
-  "baseUrl": "http://localhost"
+  "baseUrl": "https://mern-cut-url.herokuapp.com"
 }
