@@ -11,12 +11,13 @@ app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/link', require('./routes/link.routes'))
 app.use('/t', require('./routes/redirect.routes'))
 
-
+//  нужно убрать в режиме разработки, чтобы редактировать фронт-энд часть
 app.use('/', express.static(path.join(__dirname, 'client', 'build')))
 
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
 })
+// ---
 
 const PORT = process.env.PORT || config.get('port') || 5000
 
